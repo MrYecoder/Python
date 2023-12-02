@@ -1,0 +1,26 @@
+import time #-- You need this function for delay --
+import os #-- This function can clear your console --
+seconds = 0
+minutes = 0
+hours = 0
+days = 0
+while(True): #-- This is cycle, so time can refresh --
+    time.sleep(1)
+    os.system("clear")  
+    seconds += 1 
+    print(f"Seconds: {seconds}")
+    print(f"Minutes: {minutes}")
+    print(f"Hours: {hours}")
+    print(f"Days: {days}")
+    
+    if seconds == 60:
+        seconds = 0
+        minutes += 1
+        
+    if minutes == 60:  
+        minutes = 0
+        hours += 1
+        
+    if hours == 24:
+        hours = 0
+        days += 1
